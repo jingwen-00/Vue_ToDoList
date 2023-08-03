@@ -1,6 +1,6 @@
 # Vue_ToDoList
 
-![Screenshot1](Screenshot1.jpg)
+![Screenshot1](assets/Screenshot1.jpg)
 ![Screenshot1](https://github.com/jingwen-00/Vue_ToDoList/assets/Screenshot1.jpg?raw=true)
 
 <br/>
