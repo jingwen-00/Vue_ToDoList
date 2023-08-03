@@ -1,5 +1,5 @@
 # Vue_ToDoList
-![Screenshot1](Screenshot1.jpeg)
+![Screenshot1](Screenshot1.jpg)
 
 <br/>
 
