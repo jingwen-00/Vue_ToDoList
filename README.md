@@ -1,7 +1,6 @@
 # Vue_ToDoList
 ![Screenshot1](Screenshot1.jpeg)
 
-
 <br/>
 
 ## Description
