@@ -1,14 +1,18 @@
 # Vue_ToDoList
+
 ![Screenshot1](Screenshot1.jpg)
+![Screenshot1](https://github.com/jingwen-00/Vue_ToDoList/src/assets/Screenshot1.jpg?raw=true)
 
 <br/>
 
 ## Description
+
 The Vue To-Do List is a web application built using Vue.js that allows users to manage their tasks and create to-do lists. This project serves as a simple and efficient task management tool, providing an interactive user interface to add, delete, and mark tasks as completed.
 
 <br/>
 
 ## Features
+
 - Add new tasks with task name
 - Mark tasks as completed or uncompleted
 - Delete tasks from the to-do list
@@ -17,19 +21,23 @@ The Vue To-Do List is a web application built using Vue.js that allows users to 
 <br/>
 
 ## Installation
+
 To run the project locally, follow these steps:
 
 #### Install dependencies
+
 ```
 npm install
 ```
 
 #### Run the development server
+
 ```
 npm run serve
 ```
 
 #### Compiles and minifies for production
+
 ```
 npm run build
 ```
@@ -37,13 +45,15 @@ npm run build
 <br/>
 
 ## Usage
+
 1. Add a new task:
-    - Enter the task name in the input field.
-    - Click the "+" icon or press the Enter key to add the task.
+
+   - Enter the task name in the input field.
+   - Click the "+" icon or press the Enter key to add the task.
 
 2. Mark a task as completed or uncompleted:
-    - Click the checkbox next to the task to toggle its completion status.
+
+   - Click the checkbox next to the task to toggle its completion status.
 
 3. Delete a task:
-    - Click the delete icon associated with the task to remove it from the list.
-
+   - Click the delete icon associated with the task to remove it from the list.
