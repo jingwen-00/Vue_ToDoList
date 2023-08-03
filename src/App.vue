@@ -9,7 +9,9 @@
           <v-list-item-content>
             <v-list-item-title class="text-h6">John Tan</v-list-item-title>
             <v-list-item-subtitle>Reminders for yourself</v-list-item-subtitle>
-            <v-list-item-subtitle>{{new Date().toLocaleString()}}</v-list-item-subtitle>
+            <v-list-item-subtitle>{{
+              new Date().toLocaleString()
+            }}</v-list-item-subtitle>
           </v-list-item-content>
         </v-col>
       </v-list-item>
@@ -29,9 +31,18 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app color="primary" dark src="https://picsum.photos/1920/1080?random" prominent>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+      src="https://picsum.photos/1920/1080?random"
+      prominent
+    >
       <template v-slot:img="{ props }">
-        <v-img v-bind="props" gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"></v-img>
+        <v-img
+          v-bind="props"
+          gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
+        ></v-img>
       </template>
 
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
@@ -67,16 +78,16 @@ export default {
     drawer: null,
     items: [
       {
-        title: "My List",
+        title: "My Task List",
         icon: "mdi-format-list-checks",
-        to: "/"
+        to: "/",
       },
       {
         title: "About",
         icon: "mdi-help-box",
-        to: "/about"
-      }
-    ]
+        to: "/about",
+      },
+    ],
   }),
 };
 </script>

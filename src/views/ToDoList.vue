@@ -6,14 +6,17 @@
       @keyup.enter="addTask"
       class="pa-6"
       outlined
-      label=" Add Task"
+      label="Add New Task"
       append-icon="mdi-plus"
       hide-details
       clearable
     ></v-text-field>
     <v-list v-if="tasks.length" flat class="pt-0">
       <div v-for="task in tasks" :key="task.id">
-        <v-list-item @click="doneTask(task.id)" :class="{ 'blue lighten-5': task.done }">
+        <v-list-item
+          @click="doneTask(task.id)"
+          :class="{ 'blue lighten-5': task.done }"
+        >
           <template v-slot:default>
             <v-list-item-action>
               <v-checkbox :input-value="task.done"></v-checkbox>
@@ -22,11 +25,16 @@
             <v-list-item-content>
               <v-list-item-title
                 :class="{ 'text-decoration-line-through': task.done }"
-              >{{ task.title }}</v-list-item-title>
+                >{{ task.title }}</v-list-item-title
+              >
             </v-list-item-content>
             <v-list-item-action>
-              <v-btn icon @click="snackbar = true" @click.stop="deleteTask(task.id)">
-                <v-icon color="primary lighten-1">mdi-delete</v-icon>
+              <v-btn
+                icon
+                @click="snackbar = true"
+                @click.stop="deleteTask(task.id)"
+              >
+                <v-icon color="ref lighten-1">mdi-delete</v-icon>
               </v-btn>
             </v-list-item-action>
           </template>
@@ -36,12 +44,14 @@
       <v-snackbar v-model="snackbar" color="red lighten">
         {{ snackbartext }}
         <template v-slot:action="{ attrs }">
-          <v-btn color="black" text v-bind="attrs" @click="snackbar = false">Close</v-btn>
+          <v-btn color="black" text v-bind="attrs" @click="snackbar = false"
+            >Close</v-btn
+          >
         </template>
       </v-snackbar>
     </v-list>
     <div v-else class="no-tasks">
-      <v-icon color="primary" size="100">mdi-check</v-icon>
+      <v-icon color="primary" size="100" class="pb-2">mdi-help</v-icon>
       <div class="text-h5 primary--text">No Tasks</div>
     </div>
   </div>
@@ -71,7 +81,7 @@ export default {
         //   title: "Revision Chapter 54",
         //   done: false,
         // },
-      ]
+      ],
     };
   },
   methods: {
@@ -81,7 +91,7 @@ export default {
       let newTask = {
         id: Date.now(),
         title: this.newTasktitle,
-        done: false
+        done: false,
       };
       this.tasks.push(newTask);
       this.newTasktitle = "";
@@ -89,13 +99,13 @@ export default {
     doneTask(id) {
       //check id
       //console.log("id: ", id);
-      let task = this.tasks.filter(task => task.id === id)[0];
+      let task = this.tasks.filter((task) => task.id === id)[0];
       task.done = !task.done;
     },
     deleteTask(id) {
-      this.tasks = this.tasks.filter(task => task.id !== id);
-    }
-  }
+      this.tasks = this.tasks.filter((task) => task.id !== id);
+    },
+  },
 };
 </script>
 <style lang="sass">
