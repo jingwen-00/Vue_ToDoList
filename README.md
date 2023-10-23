@@ -1,8 +1,4 @@
 # Vue_ToDoList
-![Screenshot1](Screenshot1.jpeg)
-
-<br/>
-
 ## Description
 
 The Vue To-Do List is a web application built using Vue.js that allows users to manage their tasks and create to-do lists. This project serves as a simple and efficient task management tool, providing an interactive user interface to add, delete, and mark tasks as completed.
