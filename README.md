@@ -5,15 +5,6 @@ The Vue To-Do List is a web application built using Vue.js that allows users to 
 
 <br/>
 
-## Features
-
-- Add new tasks with task name
-- Mark tasks as completed or uncompleted
-- Delete tasks from the to-do list
-- Responsive design for various devices
-
-<br/>
-
 ## Installation
 
 To run the project locally, follow these steps:
@@ -35,6 +26,15 @@ npm run serve
 ```
 npm run build
 ```
+
+<br/>
+
+## Features
+
+- Add new tasks with task name
+- Mark tasks as completed or uncompleted
+- Delete tasks from the to-do list
+- Responsive design for various devices
 
 <br/>
 
